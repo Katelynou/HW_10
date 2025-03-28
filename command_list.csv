@@ -1,0 +1,29 @@
+    3  git config --global user.email "drobatiy@gmail.com"
+    4  git config --global --list\n
+    5  git clone https://github.com/Katelynou/HW_10.git
+    6  cd HW_10
+    7  touch text_ignore.txt\n
+    8  ls
+    9  nano .gitignore\n
+   10  ld
+   11  ls
+   12  nano .gitignore\n
+   13  git status
+   14  git add .
+   15  git commit -m "Додано text_ignore.txt до .gitignore"\n
+   16  git status\n
+   17  touch main_test.txt\n
+   18  git add .\n
+   19  git commit -m "Додано порожній файл main_test.txt"\n
+   20  git checkout -b develop\n
+   21  git branch\n
+   22  touch develop_test.txt\n
+   23  git add .
+   24  git commit -m "Додано порожній файл develop_test.txt"\n
+   25  nano develop_test.txt\n
+   26  git status
+   27  git add .
+   28  git commit -m "Додано рядок 'just a small change' в develop_test.txt"\n
+   29  git checkout main\n
+   30  git merge develop\n
+   31  git log\n
